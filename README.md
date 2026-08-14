@@ -2,7 +2,7 @@
 
 On-device iOS lab that demonstrates [Apple VisionKit](https://developer.apple.com/documentation/visionkit) camera and image interfaces for recognizing text, barcodes, and documents.
 
-**Org:** [vil4engineering](https://github.com/vil4engineering) · **Repo:** [vil4engineering/visionkit-lab-ios](https://github.com/vil4engineering/visionkit-lab-ios)
+**Org:** [vil4labs](https://github.com/vil4labs) · **Repo:** [vil4labs/visionkit-lab-ios](https://github.com/vil4labs/visionkit-lab-ios)
 
 ## Stack
 
