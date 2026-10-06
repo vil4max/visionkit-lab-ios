@@ -1,12 +1,32 @@
 # VisionKit Lab
 
-On-device iOS lab that demonstrates [Apple VisionKit](https://developer.apple.com/documentation/visionkit) camera and image interfaces for recognizing text, barcodes, and documents.
+iOS demo of the [VisionKit](https://developer.apple.com/documentation/visionkit) camera and image interfaces for recognizing text, barcodes, and documents on device.
 
-**Org:** [vil4labs](https://github.com/vil4labs) · **Repo:** [vil4labs/visionkit-lab-ios](https://github.com/vil4labs/visionkit-lab-ios)
+## What it demonstrates
 
-## Stack
+| Screen | API |
+|--------|-----|
+| Live Text | `ImageAnalyzer` + `ImageAnalysisInteraction` |
+| Data Scanner | `DataScannerViewController` (live text and barcodes) |
+| Document Camera | `VNDocumentCameraViewController` (multi-page scan, preview, save) |
 
-iOS 17+ · Swift 6 · SwiftUI · VisionKit · Swift Testing
+Details of each surface are in [docs/architecture.md](docs/architecture.md).
+
+## Requirements
+
+- Xcode 16 or later, iOS 17+ deployment target
+- Swift 6, SwiftUI, Swift Testing
+- A physical device for Data Scanner and Document Camera; Live Text works with library photos on supported devices
+
+## Build and run
+
+1. Open `ios/VisionLab.xcodeproj` in Xcode.
+2. Select the `VisionLab` scheme and a device (or a simulator for the Live Text screen).
+3. Set your own signing team and bundle identifier under Signing & Capabilities, then run.
+
+The project is also described in `ios/project.yml` for [XcodeGen](https://github.com/yonaskolb/XcodeGen).
+
+Run the unit tests with the `VisionLab` scheme (Product > Test).
 
 ## Screenshots
 
